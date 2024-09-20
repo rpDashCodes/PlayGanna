@@ -1,0 +1,205 @@
+:root{
+    --bgColor:rgb(30 ,30 ,30)
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+body{
+    background-color: black;
+}
+main{
+    height: 100vh;
+}
+#topN{
+    padding: 20px 30px;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: space-between;
+}
+#more img{
+    display: none;
+    width: 50px;
+    
+}
+
+.navC{
+    padding-top: 14px;
+}
+#search{
+    background-color: black;
+    width: 30rem;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    border-radius: 33px;
+    justify-content: flex-start;
+    margin: 3px 25px;
+}
+#search img{
+   filter: invert();
+   width: 20px;
+}
+
+#content{
+    margin: 3% 0%;
+    padding:0rem 4rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 0px 10px 10px 30px;
+    gap: 20px;
+}
+#close{
+    width: 3rem;
+    margin: 0% 0% 0% 93%;
+    
+}
+#close img{
+    rotate: 45deg;
+    width: 2rem;
+}
+.card img{
+    border-radius: 20px;
+    width: 10em;
+}
+
+#controlBar{
+    background-color: var(--bgColor);
+    display:flex;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90vw;
+    position: fixed;
+    bottom: 30px;
+    left: 3%;
+    z-index: 2;
+    box-shadow:0px 0px 5px 5px rebeccapurple
+}
+#cLeft{
+    width: 97%;
+}
+#dot{
+    position: relative;
+    left: 2%;
+    bottom: 0.7rem;
+}
+#mControl{
+    display: flex;
+    justify-content: space-between;
+}
+#controlButtons{
+    width: 4.9rem;
+    margin: auto;
+}
+#controlBar img{
+    cursor: pointer;
+}
+ 
+ #controlButtons :nth-child(even){
+    margin: 0px 7px;
+}
+#seekBar{
+    height: 4px;
+    background-color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#seek{
+    background-color: #7ddfdf;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 7px;
+    left: 0%;/*initial seek position*/
+    transition: left 300ms;/*for smooth transtion of seek*/
+}
+
+#accesiblity{
+    background-color: var(--bgColor);
+    border-radius: 12px;
+    padding: 20px 10px;
+    position: absolute;
+    z-index: 3;
+    width: 10rem;
+    right:1rem;
+    bottom: 7rem;
+    box-shadow: 0px 0px 7px 3px blueviolet;
+}
+#accesiblity div{
+   padding: 15px 7px;
+   border-radius: 6px;
+}
+#accesiblity div span{
+    position: relative;
+    left: 5em;
+}
+#accesiblity div:hover{
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+.opened{
+    
+    position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  z-index: 1;
+  background-color: var(--bgColor);
+}
+.none{
+    display: none;
+}
+#songList{
+    list-style: none;
+    height: 18rem;
+    overflow-y: scroll;
+}
+#songList li{
+    background-color: black;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 30px;
+}
+#songList >li:hover{
+    cursor: pointer;
+    box-shadow:  0px 0px 9px 1px #7bc0b2;
+}
+#songList::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  #songList::-webkit-scrollbar-track {
+    background: #2b2b2b; /* Dark background color for the track */
+    border-radius: 10px;
+  }
+  
+  #songList::-webkit-scrollbar-thumb {
+    background-color: #555555; /* Darker color for the handle */
+    border-radius: 10px;
+    border: 2px solid #2b2b2b; /* Padding around the handle */
+  }
+  @media(max-width:720px)
+  {
+    #content{
+        padding: 1rem;
+    }
+  }
+
+  
+  
